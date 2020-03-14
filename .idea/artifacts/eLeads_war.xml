@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="eLeads:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>eLeads</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="eLeads.war">
+      <element id="artifact" artifact-name="eLeads:war exploded" />
+    </root>
+  </artifact>
+</component>
