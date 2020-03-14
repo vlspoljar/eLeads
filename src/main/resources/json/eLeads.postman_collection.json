@@ -1,0 +1,442 @@
+{
+	"info": {
+		"_postman_id": "069f9fdd-5e10-435c-84ef-a117918cf516",
+		"name": "eLeads",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "engineTypeResource",
+			"item": [
+				{
+					"name": "findAllEngineTypes",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/eLeads/resources/eLeads/engineTypeResource/findAllEngineTypes",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"eLeads",
+								"resources",
+								"eLeads",
+								"engineTypeResource",
+								"findAllEngineTypes"
+							]
+						},
+						"description": "Engine types fetched."
+					},
+					"response": []
+				},
+				{
+					"name": "findEngineTypeById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/eLeads/resources/eLeads/engineTypeResource/findEngineTypeById/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"eLeads",
+								"resources",
+								"eLeads",
+								"engineTypeResource",
+								"findEngineTypeById",
+								"1"
+							]
+						},
+						"description": "Engine type fetched."
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "carBrandResource",
+			"item": [
+				{
+					"name": "findAllCarBrands",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/eLeads/resources/eLeads/carBrandResource/findAllCarBrands",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"eLeads",
+								"resources",
+								"eLeads",
+								"carBrandResource",
+								"findAllCarBrands"
+							]
+						},
+						"description": "Car brands fetched."
+					},
+					"response": []
+				},
+				{
+					"name": "findCarBrandById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/eLeads/resources/eLeads/carBrandResource/findCarBrandById/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"eLeads",
+								"resources",
+								"eLeads",
+								"carBrandResource",
+								"findCarBrandById",
+								"1"
+							]
+						},
+						"description": "Car brand fetched."
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "carModelResource",
+			"item": [
+				{
+					"name": "findAllCarModels",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/eLeads/resources/eLeads/carModelResource/findAllCarModels",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"eLeads",
+								"resources",
+								"eLeads",
+								"carModelResource",
+								"findAllCarModels"
+							]
+						},
+						"description": "Car models fetched."
+					},
+					"response": []
+				},
+				{
+					"name": "findCarModelById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/eLeads/resources/eLeads/carModelResource/findCarModelById/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"eLeads",
+								"resources",
+								"eLeads",
+								"carModelResource",
+								"findCarModelById",
+								"1"
+							]
+						},
+						"description": "Car model fetched."
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "carResource",
+			"item": [
+				{
+					"name": "findAllCars",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/eLeads/resources/eLeads/carResource/findAllCars",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"eLeads",
+								"resources",
+								"eLeads",
+								"carResource",
+								"findAllCars"
+							]
+						},
+						"description": "Cars fetched."
+					},
+					"response": []
+				},
+				{
+					"name": "findCarById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/eLeads/resources/eLeads/carResource/findCarById/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"eLeads",
+								"resources",
+								"eLeads",
+								"carResource",
+								"findCarById",
+								"1"
+							]
+						},
+						"description": "Car fetched."
+					},
+					"response": []
+				},
+				{
+					"name": "filterCars",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"engineType\": {\n\t\t\"id\": 3\n\t}\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/eLeads/resources/eLeads/carResource/filterCars",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"eLeads",
+								"resources",
+								"eLeads",
+								"carResource",
+								"filterCars"
+							]
+						},
+						"description": "Cars filtered."
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "leadResource",
+			"item": [
+				{
+					"name": "createLead",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"firstName\": \"Jane\",\n\t\"lastName\": \"Doe\",\n\t\"city\": \"New York\",\n\t\"cars\": [\n\t\t{\n            \"carBrand\": {\n                \"id\": 4,\n                \"name\": \"Toyota\"\n            },\n            \"carModel\": {\n                \"id\": 11,\n                \"name\": \"Corolla\"\n            },\n            \"color\": \"White\",\n            \"engineType\": {\n                \"id\": 3,\n                \"name\": \"Hybrid\"\n            },\n            \"id\": 20,\n            \"numDoors\": 5\n        },\n        {\n            \"carBrand\": {\n                \"id\": 4,\n                \"name\": \"Toyota\"\n            },\n            \"carModel\": {\n                \"id\": 12,\n                \"name\": \"Yaris\"\n            },\n            \"color\": \"White\",\n            \"engineType\": {\n                \"id\": 3,\n                \"name\": \"Hybrid\"\n            },\n            \"id\": 22,\n            \"numDoors\": 5\n        },\n        {\n            \"carBrand\": {\n                \"id\": 5,\n                \"name\": \"Volvo\"\n            },\n            \"carModel\": {\n                \"id\": 15,\n                \"name\": \"V60\"\n            },\n            \"color\": \"Black\",\n            \"engineType\": {\n                \"id\": 3,\n                \"name\": \"Hybrid\"\n            },\n            \"id\": 28,\n            \"numDoors\": 5\n        }\n\t]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/eLeads/resources/eLeads/leadResource/createLead",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"eLeads",
+								"resources",
+								"eLeads",
+								"leadResource",
+								"createLead"
+							]
+						},
+						"description": "Lead created."
+					},
+					"response": []
+				},
+				{
+					"name": "editLead",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"id\": 3,\n\t\"firstName\": \"John\",\n\t\"lastName\": \"Doe\",\n\t\"city\": \"New York\",\n\t\"cars\": [\n        {\n            \"carBrand\": {\n                \"id\": 4,\n                \"name\": \"Toyota\"\n            },\n            \"carModel\": {\n                \"id\": 12,\n                \"name\": \"Yaris\"\n            },\n            \"color\": \"White\",\n            \"engineType\": {\n                \"id\": 3,\n                \"name\": \"Hybrid\"\n            },\n            \"id\": 22,\n            \"numDoors\": 5\n        },\n        {\n            \"carBrand\": {\n                \"id\": 5,\n                \"name\": \"Volvo\"\n            },\n            \"carModel\": {\n                \"id\": 15,\n                \"name\": \"V60\"\n            },\n            \"color\": \"Black\",\n            \"engineType\": {\n                \"id\": 3,\n                \"name\": \"Hybrid\"\n            },\n            \"id\": 28,\n            \"numDoors\": 5\n        }\n\t]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/eLeads/resources/eLeads/leadResource/editLead",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"eLeads",
+								"resources",
+								"eLeads",
+								"leadResource",
+								"editLead"
+							]
+						},
+						"description": "Lead edited."
+					},
+					"response": []
+				},
+				{
+					"name": "deleteLeadById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/eLeads/resources/eLeads/leadResource/deleteLeadById/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"eLeads",
+								"resources",
+								"eLeads",
+								"leadResource",
+								"deleteLeadById",
+								"1"
+							]
+						},
+						"description": "Lead deleted."
+					},
+					"response": []
+				},
+				{
+					"name": "findAllLeads",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/eLeads/resources/eLeads/leadResource/findAllLeads",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"eLeads",
+								"resources",
+								"eLeads",
+								"leadResource",
+								"findAllLeads"
+							]
+						},
+						"description": "Leads fetched."
+					},
+					"response": []
+				},
+				{
+					"name": "findLeadById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/eLeads/resources/eLeads/leadResource/findLeadById/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"eLeads",
+								"resources",
+								"eLeads",
+								"leadResource",
+								"findLeadById",
+								"3"
+							]
+						},
+						"description": "Lead fetched."
+					},
+					"response": []
+				},
+				{
+					"name": "filterLeads",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"city\": \"new york\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/eLeads/resources/eLeads/leadResource/filterLeads",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"eLeads",
+								"resources",
+								"eLeads",
+								"leadResource",
+								"filterLeads"
+							]
+						},
+						"description": "Leads filtered."
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		}
+	],
+	"protocolProfileBehavior": {}
+}
